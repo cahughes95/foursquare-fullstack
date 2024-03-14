@@ -9,7 +9,7 @@ RUN git clone https://github.com/cahughes95/foursquare-fullstack
 RUN apk update \
     && apk add postgresql-dev gcc python3-dev musl-dev
 
-WORKDIR /usr/src/app/foursquare/api
+WORKDIR /usr/src/app/foursquare-fullstack/foursquare/api
 
 RUN pip3 install -r requirements.txt
 
