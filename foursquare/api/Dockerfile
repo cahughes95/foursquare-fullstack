@@ -2,6 +2,7 @@ FROM python:3.7-alpine
 WORKDIR /usr/src/app
 
 # COPY ./ ./
+RUN apt-get update && apt-get install -y git
 
 RUN git pull https://github.com/cahughes95/foursquare-fullstack
 
