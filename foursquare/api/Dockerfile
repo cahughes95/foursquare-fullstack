@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 # COPY ./ ./
 RUN apk update && apk add --no-cache git
 
-RUN git pull https://github.com/cahughes95/foursquare-fullstack
+RUN git clone https://github.com/cahughes95/foursquare-fullstack
 
 RUN apk update \
     && apk add postgresql-dev gcc python3-dev musl-dev
